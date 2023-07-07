@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>CODE</title>
+    <style>
+
+      .navbar-shadow {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      }
+
+      .skills .progress {
+        height: 60px;
+        display: block;
+        background: none;
+      }
+
+      .skills .val {
+        float: right;
+        font-style: normal;
+      }
+
+      .skills .progress-bar-wrap {
+        background: #f2f3f5;
+      }
+
+      .skills .progress-bar {
+        width: 4px;
+        height: 15px;
+        background-color: aqua;
+      }
+      .skills .progress-bar-job {
+        width: 4px;
+        height: 15px;
+        background-color: red;
+      }
+
+      .picture {
+        width: 500px;
+        height: 300px;
+      }
+
+      .icons {
+        color: #666666;
+      }
+
+      .resume {
+        border-left: 2px solid lightgray;
+        position: relative;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .resume::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        border: 2px solid lightgray;
+        left: -17px;
+        background: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-lg p-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="40"
+                fill="currentColor"
+                class="bi bi-code-slash"
+                viewBox="2 2 16 16"
+              >
+                <path
+                  d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                />
+              </svg>
+              <p class="fs-2 fw-bold">code</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase fw-bold"
+                  aria-current="page"
+                  href="#znalosti"
+                  >znalosti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fw-bold" href="#zivotopis"
+                  >zivotopis</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fw-bold" href="#kontakt"
+                  >kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row align-items-center">
+        <div class="col g-5">
+          <p class="display-6 fw-bold">Nadšený programátor.</p>
+          <p class="fw-lighter fs-4">
+            Programování je fascinující cesta do světa logiky a tvůrčího
+            myšlení. Každá funkce, každý skript, představuje nový prostor pro
+            inovace a řešení problémů.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">INFO</button>
+            <button class="btn btn-secondary" type="button">KONTAKT</button>
+          </div>
+        </div>
+        <div class="col g-5">
+          <img src="img/obr-1.jpg" class="img-fluid-lg picture" alt="obr-1" />
+        </div>
+      </div>
+      <div class="row skills" id="znalosti">
+        <p
+          class="fw-bold fs-2 text-uppercase text-end g-5 text-decoration-underline"
+        >
+          znalosti
+        </p>
+        <p class="fs-5 fw-lighter">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
+          provident a porro? Non reprehenderit sit aut incidunt porro. Totam,
+          quas vero dolorum deleniti consequatur consectetur rerum harum nostrum
+          adipisci?
+        </p>
+        <div class="col-lg-6 g-5">
+          <div class="progress">
+            <span class="skill fw-bold fs-6">HTML <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                aria-label="HTML ZNALOSTI"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 95%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill fw-bold fs-6">CSS <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill fw-bold fs-6"
+              >JavaScript <i class="val">35%</i></span
+            >
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                style="width: 35%"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 g-5">
+          <div class="progress">
+            <span class="skill fw-bold fs-6">React <i class="val">45%</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                style="width: 45%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill fw-bold fs-6">Vue <i class="val">15%</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                style="width: 15%"
+              ></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill fw-bold fs-6 text-uppercase"
+              >full stack <i class="val">10%</i></span
+            >
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar-job progress-bar-striped"
+                role="progressbar"
+                style="width: 10%"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex g-5" style="justify-content: space-evenly">
+          <i class="icons fa-brands fa-html5 fa-5x"></i>
+          <i class="icons fa-brands fa-css3-alt fa-5x"></i>
+          <i class="icons fa-brands fa-square-js fa-5x"></i>
+          <i class="icons fa-brands fa-npm fa-5x"></i>
+          <i class="icons fa-brands fa-react fa-5x"></i>
+          <i class="icons fa-brands fa-vuejs fa-5x"></i>
+        </div>
+      </div>
+      <div class="row" id="zivotopis">
+        <p
+          class="fw-bold fs-2 text-uppercase text-end g-5 text-decoration-underline"
+        >
+          zivotopis
+        </p>
+
+        <div class="row">
+          <div class="col-lg-6 resume px-4">
+            <p class="fw-bold fs-4 text-secondary text-uppercase">summary</p>
+            <p class="fw-bold fs-5 text-primary">Martin Balajka</p>
+            <p class="fw-light text-secondary">
+              Student pátého ročníku studijního oboru Aplikovaná Logistika na
+              Univerzitě Tomáše Bati ve Zlíně
+            </p>
+            <p class="fw-light">tř. Tomáše Bati 3118</p>
+            <p class="fw-light">608204736</p>
+            <p class="fw-light">martinbalajka23@gmail.com</p>
+          </div>
+          <div class="col-lg-6 resume px-4">
+            <p class="fw-bold fs-4 text-secondary text-uppercase">praxe</p>
+            <p class="fw-bold fs-5 text-primary">prvninakup.cz</p>
+            <p class="fw-light fs-2 text-secondary text-uppercase">
+              2019 - současnost
+            </p>
+            <ul>
+              <li class="fw-light">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, vel!
+              </li>
+              <li class="fw-light">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, vel!orem, ipsum dolor sit amet consectetur
+                adipisicing elit. Recusandae, vel!orem, ipsum dolor sit amet
+                consectetur adipisicing elit. Recusandae, vel!
+              </li>
+              <li class="fw-light">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempora dolorum dicta aperiam sequi sed ipsa?orem, ipsum dolor
+                sit amet consectetur adipisicing elit. Recusandae, vel!orem,
+                ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                vel!
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 resume p-4">
+            <p class="fw-bold fs-4 text-secondary text-uppercase">vzdelani</p>
+            <p class="fw-bold fs-5 text-primary">Bakalářský titul</p>
+            <p class="fw-light">Aplikovaná logistika</p>
+            <p class="fw-light">tř. Tomáše Bati 3118</p>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              dolores illo quos nobis, aliquid quo omnis voluptatum dolorum
+              laudantium vel officiis exercitationem ut neque similique.
+            </p>
+            <p class="fw-bold fs-5 text-primary">Střední škola</p>
+            <p class="fw-light">Academic School ve Zlíně</p>
+            <p class="fw-light text-secondary">obor zamřený na ekonmiku</p>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              dolores illo quos nobis, aliquid quo omnis voluptatum dolorum
+              laudantium vel officiis exercitationem ut neque similique.
+            </p>
+            <p class="fw-bold fs-5 text-primary">Základní škola</p>
+            <p class="fw-light">7. Jazyková ZŠ ve Zlíně</p>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              dolores illo quos nobis, aliquid quo omnis voluptatum dolorum
+              laudantium vel officiis exercitationem ut neque similique.
+            </p>
+          </div>
+          <div class="col-lg-6 resume p-4">
+            <p class="fw-bold fs-4 text-secondary text-uppercase">konicky</p>
+            <ul class="fw-light">
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                labore earum. Sequi ex eaque impedit ut est voluptate provident
+                vitae repellendus deleniti. Dolorem aut atque ipsa quas, iure
+                dolore ut.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end" id="kontakt">
+        <p class="fw-bold fs-2 text-uppercase g-5 text-decoration-underline">
+          kontakt
+        </p>
+        <div class="col-lg-6 g-5">
+          <p class="fw-bold fs-4">Location</p>
+          <p class="fw-light">Ulice cislo popisne</p>
+          <p class="fw-light">Mesto</p>
+          <p class="fw-bold fs-4">Email</p>
+          <p class="fw-light">martinbalajka23@gmail.com</p>
+          <p class="fw-bold fs-4">Telefon</p>
+          <p class="fw-light">608204736</p>
+        </div>
+        <div class="col-lg-6 g-5">
+          <form>
+            <div class="input-group">
+              <input
+                type="text"
+                id="text"
+                class="form-control"
+                aria-required="true"
+                placeholder="Jmeno"
+                required
+              />
+              <input
+                type="text"
+                id="text2"
+                class="form-control"
+                placeholder="Prijmeni"
+                aria-required="true"
+                required
+              />
+            </div>
+            <div class="form-floating">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="email"
+                aria-required="true"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="description"
+                id="description"
+                class="form-control description-form"
+                style="height: 200px"
+                aria-required="true"
+                required
+              />
+              <label for="Description" class="fs-5">Description</label>
+              <button type="submit" class="btn btn-primary my-2">
+                Odeslat zpravu
+              </button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      <footer class="row">
+        <div class="col-lg-12 bg-body-tertiary d-lg-inline-flex justify-content-center gy-5">
+      
+          <p class="fs-5 fw-light my-2">Copyright © 2023 martinbalajka</p>
+        <a href="https://github.com/wazox23" class="text-decoration-none text-dark">  <i class="fa-brands fa-github fa-2x mx-2 my-2"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
